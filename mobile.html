@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hypixel Skyblock Mayor</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://skyblockmayor.netlify.app/mobilestyle.css" />
+<link href='https://skyblockmayor.netlify.app/font.css' rel='stylesheet'>
+<meta property="og:title" content="Hypixel Mayor" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://skyblockmayor.netlify.app/" />
+<meta property="og:image" content="https://skyblockmayor.netlify.app/Derpy.png" />
+<meta property="og:description" content="Here can you see the current Skyblock mayor and the one who probably is next!" />
+<meta property="theme-color" content="#4D6CC8" />
+</head>
+<body>
+<h1>Welcome to <strong>Hypixel Skyblock Mayor</strong>!</h1>
+<h2>Here can you see the current Skyblock mayor and its perks. Here can you also see the most likely mayor to be elected next and its perks!</h2>
+<hr>
+<button class="collapsible">Current mayor: Derpy</button>
+<div class="content">
+  <span style="color: #FF55FF">Derpy</span>
+  <div class="dropdown-content">
+  <p style="color: #FF55FF"><strong>TURBO MINIONS!!!</strong></p>
+  <p>Minions have double the output!</p>
+  <p style="color: #FF55FF"><strong>AH CLOSED!!!</strong></p>
+  <p>The auction house will be closed when Derpy is elected!</p>
+  <p style="color: #FF55FF"><strong>DOUBLE MOBS HP!!!</strong></p>
+  <p>ALL monsters have double health!</p>
+  <p style="color: #FF55FF"><strong>MOAR SKILLZ!!!</strong></p>
+  <p>Gain 50% more skill experience</p>
+</div>
+</div>
+<h3><strong>Most likely the next mayor:</strong></h3>
+	<p>Election room not open yet :(</p>
+<hr>
+<p>Made by dante_nl</p>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</body>
+</html>
