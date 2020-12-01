@@ -55,10 +55,14 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-	var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));
-	if (mobile) {
-    		window.open('https://dante-nl.netlify.app/', replace)            
-	}  
-	</script>
+<script language="javascript">
+  <!--
+  if(!window.location.search.substring(1) == "full=true") {
+    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/Blackberry/i) || navigator.userAgent.match(/WebOs/i)) { // detect mobile browser
+      window.location.replace("http://dante-nl.netlify.app");
+    }
+  }
+  -->
+</script>
 </body>
 </html>
