@@ -1,8 +1,8 @@
 body {
-      @media (prefers-color-scheme: dark) {
-            background: white;
-            font-family: 'Minecraftia';
-            color: black;
+
+       background: white;
+       font-family: 'Minecraftia';
+       color: black;
         }
         
         @media (prefers-color-scheme: dark) {
